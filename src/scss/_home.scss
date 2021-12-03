@@ -1,0 +1,207 @@
+//seller section
+.seller-sec {
+    margin-bottom: 30px;
+    .section-heading{
+        position: relative;
+        margin-bottom: 40px;
+       
+        .seller-heading {
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 50px;
+            margin-bottom: 0;
+            font-size: 2em;
+            color: #4e9100;
+            font-family: $primary-font;
+            @media (min-width: 768px) {
+                font-size: 3rem;
+            }
+        }
+       
+        .seller-heading-text {
+            text-align: center;
+            padding: 17px 0;
+            font-weight: 400;
+            // font-family: $primary-font;
+            color: #3a281f;
+            font-size: 1.3em;
+    
+        }
+        
+    }
+    .btn-container{
+        margin: 50px 0;  
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: #020202;
+            font-size: 30px;
+            font-weight: 400;
+            i{
+                vertical-align: middle;
+            }
+        }
+        
+    }
+    .seller{
+        position: relative;
+        margin-bottom: 40px;
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+        .seller-rupee{
+            color: #4e9100;
+            font-weight: 700;
+            font-size: 1.7em;
+            font-family: $primary-font;
+            margin: 0;
+            text-align: center;
+        }
+        .seller-text{
+            color: #4e9100;
+            font-weight: 500;
+            font-size: 1.4em;
+            font-family: $primary-font;
+            margin: 0;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .seller-img{
+            width: 100%;
+        }
+        // .overlay{
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: change-color(#000, $alpha: 0.5);
+        //     top:0;
+        //     left:0;
+        //     transform:scale(0);
+        //     transition: 0.1s ease-in-out;
+        //     i{
+        //         color: #fff;
+        //         position: absolute;
+        //         top:50%;
+        //         left: 50%;
+        //         transform: translate(-50%,-50%);
+        //         font-size: 3em;
+        //     }
+        // }
+
+        &:hover{
+            .overlay{
+                transform: scale(1);
+            }
+        }
+    }
+}
+//end seller section
+
+//categories section
+.categories-sec {
+    margin-bottom: 30px;
+    .section-heading{
+        position: relative;
+        margin-bottom: 20px;
+       
+        .categories-heading {
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 50px;
+            margin-bottom: 0;
+            font-size: 2em;
+            color: #4e9100;
+            font-weight: 500;
+            font-family: $primary-font;
+            @media (min-width: 768px) {
+                font-size: 3rem;
+            }
+        }
+       .categories-heading-text{
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        font-size: 0.8em;
+        color: #599914;
+        font-weight: 500;
+        padding-top: 10px;
+        font-family: $primary-font;
+        @media (min-width: 768px) {
+            font-size: 1.3rem;
+        }
+       }
+        
+    }
+    .categories{
+        margin-bottom: 40px;
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+        .categories-text{
+            color: #87b468;
+            font-weight: 500;
+            font-size: 1.4em;
+            font-family: $primary-font;
+            margin: 0;
+            padding-top: 15px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .categories-img{
+            width: 100%;
+        }
+    }
+}
+//end categories section
+
+//instragram section
+.instragram-sec {
+    margin-bottom: 30px;
+    margin-top: 80px;
+    .section-heading{
+        position: relative;
+        margin-bottom: 46px;
+        .instragram-heading {
+            text-align: center;
+            margin-bottom: 0;
+            font-size: 3em;
+            color: #4e9100;
+            font-weight: 700;
+            font-family: $primary-font;
+            span{
+            text-align: center;
+            text-transform: uppercase;
+            
+            font-size: 2em;
+            color: #4e9100;
+            font-weight: 600;
+            font-family: $primary-font;
+            background-color: #cbf9a3;
+            @media (min-width: 768px) {
+                font-size: 3rem;
+            }
+            }
+        }    
+    }
+    .instragram{
+        margin-bottom: 40px;
+        box-shadow: 3px 4px 12px 13px #d2f7b1;
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+        .instragram-text{
+            color: #87b468;
+            font-weight: 500;
+            font-size: 1.4em;
+            font-family: $primary-font;
+            margin: 0;
+            padding-top: 15px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .instragram-img{
+            width: 100%;
+        }
+    }
+}
+//end instragram section
