@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "watch": "npm run dev -- --watch",
+    "prod": "webpack --mode=production"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.110",
+    "autoprefixer": "^10.2.6",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "mini-css-extract-plugin": "^1.6.1",
+    "postcss": "^8.3.5",
+    "postcss-loader": "^6.1.0",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "swc-loader": "^0.1.15",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.7.2",
+    "webpackbar": "*"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
+}
