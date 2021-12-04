@@ -1,5 +1,6 @@
-let array = [20, 2, 12, 32]
+// import * as WOW from 'wowjs'
+require('bootstrap')
+// require('wowjs');
 
-array.map((v) => v > 15);
-
-console.log('hii')
+// new WOW().init();
+require('./_homepage')

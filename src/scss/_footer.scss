@@ -1,0 +1,18 @@
+/* copyright css */
+.copy-right {
+    background-color:#4e9100;
+    .copyright-text {
+        color: #fff;
+        text-align: center;
+        font-size: 1.3em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: $primary-font;
+        font-weight: 400;
+        margin: 0;
+        a{
+            color: #fbfcfa;
+            text-decoration: none;
+        }
+    }
+}
