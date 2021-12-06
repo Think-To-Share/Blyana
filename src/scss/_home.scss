@@ -73,14 +73,19 @@
                     .button-container{
                         text-align: center;
                         a{
-                            display: inline-block;
-                            background-color: #c2eaa3;
-                            color: #377500;
-                            font-weight: 600;
-                            text-decoration: none;
-                            padding: 12px 35px;
-                            font-size: 1.5em;
-                            
+                            // display: inline-block;
+                            // background-color: #c2eaa3;
+                            // color: #377500;
+                            // font-weight: 600;
+                            // text-decoration: none;
+                            // padding: 12px 35px;
+                            // font-size: 1.5em;
+                             @include button(#c2eaa3,#377500);
+                            // &:hover{
+                            // background-color:  #377500;
+                            // color: #c2eaa3;
+                            // transition: 0.3s;
+                            // }
                         }
                     }
                     // .link-text{
@@ -152,8 +157,20 @@
     .seller{
         position: relative;
         margin-bottom: 40px;
+        // overflow: hidden;
         @media (min-width: 768px) {
             margin-bottom: 0;
+        }
+        a{
+            img{
+                transition: transform .4s ease-in-out;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.2);
+                 
+                }
+            }
         }
         .seller-rupee{
             color: #4e9100;
@@ -200,6 +217,25 @@
             }
         }
     }
+    .seller-container{
+        .seller-heading-text{
+            text-align: right;
+            margin: 0;
+            padding: 0;
+            padding-top: 20px;
+                a{
+                    text-decoration: none;
+                    color: #599914;
+                    font-size: 0.9em;
+                    font-weight: 500;
+                    font-family: $primary-font;
+                    @media (min-width: 768px) {
+                        font-size: 1.3rem;
+                    }
+    
+                }
+        }
+    }
 }
 //end seller section
 
@@ -238,6 +274,7 @@
 
 //About us section
 .aboutus-sec{
+    margin-top: 45px;
     .aboutus-img{
 
     }
@@ -260,15 +297,15 @@
     .button-container{
         text-align: left;
         .button{
-            display: inline-block;
-            background-color: #c2eaa3;
-            color: #498501;
-            font-weight: 600;
-            text-decoration: none;
-            padding: 12px 29px;
-            border-radius: 6px;
-            box-shadow: 2px 2px 7px 2px #dddddd;
-            
+            // display: inline-block;
+            // background-color: #c2eaa3;
+            // color: #498501;
+            // font-weight: 600;
+            // text-decoration: none;
+            // padding: 12px 29px;
+            // border-radius: 6px;
+            // box-shadow: 2px 2px 7px 2px #dddddd;
+            @include button(#c2eaa3,#377500);
         }
     }
   
@@ -277,6 +314,7 @@
 
 //categories section
 .categories-sec {
+    margin-top: 45px;
     margin-bottom: 30px;
     .section-heading{
         position: relative;
@@ -299,18 +337,37 @@
         text-align: right;
         margin: 0;
         padding: 0;
-        font-size: 0.8em;
-        color: #599914;
-        font-weight: 500;
         padding-top: 10px;
-        font-family: $primary-font;
-        @media (min-width: 768px) {
-            font-size: 1.3rem;
-        }
+            a{
+                text-decoration: none;
+                color: #599914;
+                font-size: 0.9em;
+                font-weight: 500;
+                font-family: $primary-font;
+                @media (min-width: 768px) {
+                    font-size: 1.3rem;
+                }
+
+            }
+            
+       
        }
         
     }
     .categories{
+        overflow: hidden;
+        a{
+            img{
+                transition: transform .3s ease-in-out;
+            }
+            &:hover{
+                img{
+                    transform: scale(0.9);
+                 
+                }
+            }
+        }
+       
         margin-bottom: 40px;
         @media (min-width: 768px) {
             margin-bottom: 0;
@@ -327,8 +384,11 @@
         }
         .categories-img{
             width: 100%;
+            
         }
+        
     }
+
 }
 //end categories section
 
