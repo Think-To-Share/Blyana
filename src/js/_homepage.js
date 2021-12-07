@@ -18,3 +18,15 @@ if (document.querySelector('.hero-section')) {
         }
     })
 }
+
+if (document.querySelector('.blog-section')) {
+    tns({
+        container: '.blog-section .slides',
+        items: 3,
+        nav: true,
+        gutter: 20,
+        autoplay: true,
+        autoplayButtonOutput: false,
+        controls:false
+    })
+}

@@ -443,3 +443,77 @@
     }
 }
 //end instragram section
+//blog section
+.blog-section {
+    margin-bottom: 121px;
+    .tns-outer{
+        position: relative;
+        .tns-nav{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            button{
+                padding: 10px;
+                border: none;
+                background-color: #97c657;
+                border-radius: 100%;
+                box-shadow: none;
+                margin-left: 20px;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &.tns-nav-active{
+                    background-color: #469200;
+                }
+            }
+        }
+    }
+    .blogheading {
+        color: #4e9100;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 93px;
+        margin-bottom: 50px;
+        font-family: $secondary-font;
+        font-size: 4em;
+        span{
+        font-family: $primary-font;
+        }
+    }
+    .blog-link {
+        text-decoration: none;
+        color: inherit;
+        .card {
+            transition: all ease-in-out 0.3s;
+            height: 100%;
+            .card-body {
+                .card-text {
+                    text-align: center;
+                    padding: 30px;
+                    font-family: $primary-font;
+                    font-weight: 500;
+                    font-size: 1.2em;
+                    color: #000000;
+                    &:hover {
+                        background-color: #ceefb0;
+                        color: #469200;
+                }
+            }
+            &:hover {
+                background-color: #ceefb0;
+        }
+                // box-shadow: 6px 6px 18px 3px #b1a8a8;
+                // .product-text {
+                //     color: #fff;
+                // }
+                // a {
+                //     color: #fff;
+                // }
+            }
+        }
+    }
+}
+//end blog section

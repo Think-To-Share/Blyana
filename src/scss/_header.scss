@@ -20,7 +20,7 @@
     .bottom-bar{
         // padding: 0px 0;
         padding-bottom: 0;
-        // position: fixed;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 1000;
@@ -31,21 +31,74 @@
         @media (min-width: 768px) {
             display:block;
         }
+        &.scroll{
+            background-color: #458E00;
+            .logo-side{
+                .logo{
+                    display: none;
+                }
+                .logo-white{
+                    width: 247px;
+                    display: block;
+                }
+            }
+            .menu-icon{
+                ul{
+                    li{
+                        a{
+                            i{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .menu-side {
             $menu-item-gap: 1.3rem;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-grow: 1;
-            ul {
+           > ul {
                 display: flex;
                 margin-bottom: 0;
                 padding: 0;
     
-                li {
+                > li {
                     padding: 0 1.5em;
                     list-style-type: none;
                     position: relative;
+                    .sub-menu{
+                        background: #c2eaa3;
+                        margin: 0;
+                        padding: 20px 0;
+                        border-radius: 0 0 5px 5px;
+                        li{
+                            margin: 0;
+                            border: none; 
+                            padding-top: 20px;
+                            list-style-type: none;
+                            a{
+                                line-height: 25px;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 40px;
+                                padding-right: 40px;
+                                margin: 0;
+                                font-size: 14px;
+                                font-weight: 500;
+                                color: #000;
+                                height: unset;
+                                line-height: 16px;
+                            }
+
+                        }
+                        &:last-child{
+                            margin: 0;
+                        }
+                        
+                    }
     
                     a {
                         color: #ffffff;
@@ -109,6 +162,9 @@
                 @media (min-width: 768px) {
                     max-width: 100%;
                 }
+            }
+            .logo-white{
+                display: none;
             }
         }
         .menu-icon{
