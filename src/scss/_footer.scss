@@ -19,7 +19,7 @@
             color: #4e9100;
             font-family: $primary-font;
             font-weight: 500;
-            font-size: 1.4em;
+            font-size: 1.2em;
             padding-left: 0;
             text-align: center;
            @media (min-width: 992px) {
@@ -43,6 +43,9 @@
         }
         ul{
             justify-content: center;
+            @media (min-width: 992px){
+                justify-content: left; 
+            }
             li{
                 a{
                     i{
@@ -126,7 +129,7 @@
                 float: left;
                 width: 67%;
                 display: none;
-                @media(min-width:768px){
+                @media(min-width:992px){
                     display: block;
                 }
             }
