@@ -15,6 +15,8 @@
             color: #fffffe;
             text-transform: uppercase;
             padding: 15px 0;
+            margin: 0;
+
             @media (min-width: 768px){
                 font-size: 1.4em;
             }
@@ -23,19 +25,24 @@
     .bottom-bar{
         // padding: 0px 0;
         padding-bottom: 0;
-        position: fixed;
-        top: 0;
-        left: 0;
+        position: initial;
         z-index: 1000;
         width: 100%;
         background-size: contain;
         background-position:bottom center;
         display: none;
+        padding: 10px 0;
+        transition: all 0.5s ease-out;
+
         @media (min-width: 768px) {
-            display:none;
+            display: block;
         }
         &.scroll{
             background-color: #458E00;
+            position: fixed;
+            top: 0;
+            left: 0;
+
             .logo-side{
                 .logo{
                     display: none;
@@ -58,104 +65,76 @@
             }
         }
         .menu-side {
-            $menu-item-gap: 1.3rem;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-grow: 1;
-           > ul {
-                display: flex;
-                margin-bottom: 0;
-                padding: 0;
-    
-                > li {
-                    padding: 0 1.5em;
-                    list-style-type: none;
-                    position: relative;
-                    .sub-menu{
-                        background: #c2eaa3;
-                        margin: 0;
-                        padding: 20px 0;
-                        border-radius: 0 0 5px 5px;
-                        li{
-                            margin: 0;
-                            border: none; 
-                            padding-top: 20px;
-                            list-style-type: none;
-                            a{
-                                line-height: 25px;
-                                padding-top: 10px;
-                                padding-bottom: 10px;
-                                padding-left: 40px;
-                                padding-right: 40px;
-                                margin: 0;
-                                font-size: 14px;
-                                font-weight: 500;
-                                color: #000;
-                                height: unset;
-                                line-height: 16px;
-                            }
 
-                        }
-                        &:last-child{
-                            margin: 0;
-                        }
-                        
-                    }
-    
-                    a {
-                        color: #ffffff;
+            > ul {
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                > li {
+                    position: relative;
+                    padding: 15px 0;
+
+                    > a {
+                        color: #fff;
+                        text-decoration: none;
+                        padding: 0 15px;
                         font-family: $primary-font;
                         font-weight: 600;
-                        transition: color ease-in-out 0.3s;
-                        text-decoration: none;
-    
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            left: $menu-item-gap;
-                            top: calc(100% + 5px);
-                            width: 0%;
-                            height: 5px;
-                            transition: width ease-in-out 0.3s;
-                        }
+                        text-transform: uppercase;
                     }
-    
-                    &:first-child {
-                        padding-left: 0;
-    
-                        a {
-                            &::after {
-                                left: 0;
-                            }
-                        }
-                    }
-    
-                    &:last-child {
-                        padding-right: 0;
-                    }
-    
-                    &:hover {
-                        a {
-                            text-decoration: none;
-                            color: #000;
-    
-                            &::after {
-                                width: calc(100% - #{($menu-item-gap * 2)});
-                            }
-                        }
-    
-                        &:first-child,
-                        &:last-child {
+
+                    ul {
+                        display: none;
+                        opacity: 0;
+                        position: absolute;
+                        top: 100%;
+                        left: 15px;
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        background-color: #fff;
+                        box-shadow: 0 1px 3px 0 #efefef;
+                        transition: opacity 0.5s ease-in-out;
+
+                        li {
+                            border-bottom: 1px solid #d3d3d3;
+
                             a {
-                                &::after {
-                                    width: calc(100% - #{$menu-item-gap});
+                                padding: 15px 15px;
+                                text-decoration: none;
+                                color: #222;
+                                display: block;
+                                font-family: $primary-font;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                font-size: 0.9em; 
+                                transition: background-color 0.2s ease-in-out;
+
+                                &:hover {
+                                    background-color: #509200;
+                                    color: #fff;
+                                    
+                                    
                                 }
                             }
                         }
                     }
+
+                    &:hover {
+                        > ul {
+                            display: block;
+                            opacity: 1;
+                        }
+                    }
                 }
-                
             }
         }
         .logo-side{
