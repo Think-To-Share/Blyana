@@ -22,11 +22,44 @@ if (document.querySelector('.hero-section')) {
 if (document.querySelector('.blog-section')) {
     tns({
         container: '.blog-section .slides',
-        items: 3,
+        items: 1,
         nav: true,
-        gutter: 20,
         autoplay: true,
         autoplayButtonOutput: false,
-        controls:false
+        controls:false,
+        responsive: {
+            768:{
+              items: 2,
+              gutter: 20,
+            },
+            992:{
+                items: 3,
+                gutter: 20,
+              }
+        }
+    })
+}
+
+if (document.querySelector('.instragram-sec')) {
+    tns({
+        container: '.instragram-sec .slides',
+        items: 1,
+        nav: false,
+        autoplay: true,
+        autoplayButtonOutput: false,
+        controls:true,
+        // gutter:20,
+        loop:true,
+        controlsContainer:'.instragram-sec .controls-container',
+        responsive: {
+            576:{
+                items:2,
+            },
+            768:{
+              items:4,
+              gutter:20
+            }
+
+        }
     })
 }
