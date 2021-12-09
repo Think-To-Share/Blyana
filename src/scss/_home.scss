@@ -154,19 +154,23 @@
     .seller{
         position: relative;
         margin-bottom: 40px;
-        // overflow: hidden;
+        overflow: hidden;
         @media (min-width: 768px) {
             margin-bottom: 0;
         }
         a{
+            display: block;
+            overflow: hidden;
+
             img{
                 transition: transform .4s ease-in-out;
             }
-            &:hover{
-                img{
-                    transform: scale(1.2);
-                 
-                }
+           
+        }
+        &:hover{
+            img{
+                transform: scale(1.5) rotate(-10deg);
+             
             }
         }
         .seller-rupee{
@@ -214,11 +218,7 @@
         //     }
         // }
 
-        &:hover{
-            .overlay{
-                transform: scale(1);
-            }
-        }
+       
     }
     .seller-container{
         .seller-heading-text{
@@ -469,9 +469,9 @@
     }
     .instragram{
         margin-bottom: 40px;
-        box-shadow: 3px 4px 12px 13px #d2f7b1;
         @media (min-width: 768px) {
             margin-bottom: 0;
+            box-shadow: 3px 4px 12px 13px #d2f7b1;
         }
         .instragram-text{
             color: #87b468;
@@ -485,6 +485,11 @@
         }
         .instragram-img{
             width: 100%;
+        }
+        a{
+            img{
+                width: 100%;
+            }
         }
     }
     .controls-container{
