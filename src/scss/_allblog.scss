@@ -1,0 +1,39 @@
+.allblog-page{
+    .blog{
+        margin-bottom: 30px ;
+    }
+    .blog-link{
+        text-decoration: none;
+        .card{
+            box-shadow: 3px 2px 6px 1px #dddddd;
+            }
+    .card-body {
+        .card-title {
+            text-align:center;
+            font-size: 1.3em;
+            font-family: $primary-font;
+            color: #4E9100;
+            font-weight: 600;
+            
+        }
+        .card-date{
+            text-align: center;
+            font-size: 1em;
+            font-family: $primary-font;
+            color: rgb(173, 72, 72);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .card-text{
+            text-align: center;
+            font-size: 1em;
+            font-family: $primary-font;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+        }  
+    }
+              
+    }    
+}

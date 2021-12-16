@@ -1,0 +1,18 @@
+.entry-content{
+    .woocommerce{
+        ul{
+            font-family: $primary-font;
+            li{
+                list-style-type: none;
+                padding-bottom: 12px;
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #000;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

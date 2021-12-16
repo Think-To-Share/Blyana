@@ -15,18 +15,22 @@
                 margin: 0;
             }
         }
-        .footertext{
-            color: #4e9100;
-            font-family: $primary-font;
-            font-weight: 500;
-            font-size: 1.2em;
-            padding-left: 0;
-            text-align: center;
-           @media (min-width: 992px) {
-                text-align: left;
-                padding-left: 20px;
+        a{ 
+            text-decoration: none;
+            .footertext{
+                color: #4e9100;
+                font-family: $primary-font;
+                font-weight: 500;
+                font-size: 1.2em;
+                padding-left: 0;
+                text-align: center;
+               @media (min-width: 992px) {
+                    text-align: left;
+                    padding-left: 20px;
+                }
             }
         }
+      
         .text{
             color: #4e9100;
             font-family: $primary-font;
@@ -133,7 +137,7 @@
                     display: block;
                 }
             }
-            .button{
+            .by-btn{
                 background-color: #4e9100;
                 color: #fefefe;
                 text-decoration: none;

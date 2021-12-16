@@ -70,6 +70,7 @@
                         font-weight: 400;
                         font-size: 5em;
                         text-align: center;
+                        text-transform: capitalize;
                         @media (min-width: 576px){
                             font-size: 7em;
                         }
@@ -314,6 +315,7 @@
             font-weight: 400;
             text-align: center;
             padding-top: 20px;
+            text-transform: capitalize;
             @media (min-width: 768px){
                 padding-top: 0;
             }
@@ -563,11 +565,33 @@
         color: inherit;
         .card {
             transition: all ease-in-out 0.3s;
-            height: 100%;
             .card-body {
+                .card-heading-text{
+                    text-align: center;
+                    font-family: $primary-font;
+                    font-weight: 600;
+                    font-size: 1.6em;
+                    color: #000000;
+                    &:hover {
+                        background-color: #ceefb0;
+                        color: #469200;
+                }
+                }
+                .card-date{
+                    text-align: center;
+                    font-size: 1em;
+                    font-family: $primary-font;
+                    color: rgb(173, 72, 72);
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    &:hover {
+                        background-color: #ceefb0;
+                        color: #ee1d01;
+                }
+                }
                 .card-text {
                     text-align: center;
-                    padding: 30px;
+                    padding: 2px;
                     font-family: $primary-font;
                     font-weight: 500;
                     font-size: 1.2em;

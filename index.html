@@ -55,10 +55,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="menu-icon">
+                    <div class="icon">
                         <ul>
                             <li>
-                                <a href="#"><i class="fas fa-search"></i></a>
+                                <a href="#" onclick="openSearch(event)"><i class="fas fa-search"></i></a>
                             </li>
                             <li>
                                 <a href="#"> <i class="fas fa-user-circle"></i></a>
@@ -343,6 +343,8 @@
                     <div class="card" >
                         <img class="card-img-top" src="./src/images/blog1.jpg" alt="Card image">
                         <div class="card-body">
+                            <h4 class="card-heading-text">Lorem ipsum</h4>
+                            <p class="card-date">Dec 3,2021</p>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, quaerat totam! Vel porro, deleniti voluptates</p>
                         </div>
                     </div>
@@ -353,6 +355,7 @@
                     <div class="card" >
                         <img class="card-img-top" src="./src/images/blog1.jpg" alt="Card image">
                         <div class="card-body">
+                            <h4 class="card-heading-text">Lorem ipsum</h4>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, quaerat totam! Vel porro, deleniti voluptates</p>
                         </div>
                     </div>
@@ -363,6 +366,7 @@
                     <div class="card" >
                         <img class="card-img-top" src="./src/images/blog1.jpg" alt="Card image">
                         <div class="card-body">
+                            <h2 class="card-heading-text">Lorem ipsum</h2>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, quaerat totam! Vel porro, deleniti voluptates</p>
                         </div>
                     </div>
@@ -373,6 +377,7 @@
                     <div class="card" >
                         <img class="card-img-top" src="./src/images/blog1.jpg" alt="Card image">
                         <div class="card-body">
+                            <h2 class="card-heading-text">Lorem ipsum</h2>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, quaerat totam! Vel porro, deleniti voluptates</p>
                         </div>
                     </div>
@@ -383,6 +388,7 @@
                     <div class="card" >
                         <img class="card-img-top" src="./src/images/blog2.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
+                            <h2 class="card-heading-text">Lorem ipsum</h2>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, quaerat totam! Vel porro, deleniti voluptates</p>
                         </div>
                     </div>
@@ -403,6 +409,7 @@
                     <div class="card" >
                         <img class="card-img-top" src="./src/images/blog3.jpg" alt="Card image" >
                         <div class="card-body">
+                            <h2 class="card-heading-text">Lorem ipsum</h2>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, quaerat totam! Vel porro, deleniti voluptates</p>
                         </div>
                     </div>
@@ -413,6 +420,7 @@
                     <div class="card" >
                         <img class="card-img-top" src="./src/images/blog3.jpg" alt="Card image" >
                         <div class="card-body">
+                            <h2 class="card-heading-text">Lorem ipsum</h2>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, quaerat totam! Vel porro, deleniti voluptates</p>
                         </div>
                     </div>
@@ -423,6 +431,7 @@
                     <div class="card" >
                         <img class="card-img-top" src="./src/images/blog3.jpg" alt="Card image" >
                         <div class="card-body">
+                            <h2 class="card-heading-text">Lorem ipsum</h2>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, quaerat totam! Vel porro, deleniti voluptates</p>
                         </div>
                     </div>
@@ -442,7 +451,7 @@
                 <div class="col-12 col-md-3">
                     <div class="footer-text">
                        <a href="#"><img src="./src/images/blayana-logo-.png" alt=""></a>
-                        <h3 class="footertext">ABOUT US </h3>
+                       <a href="#"> <h3 class="footertext">ABOUT US </h3></a>
                         <p class="text">The Company<br>Careers</p>
                         <ul class="d-flex">
                             <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -483,7 +492,7 @@
                             and VIP benefits.</p>
                         <div class="line-btn">
                             <div class="line"> </div>
-                            <a href="#" class="button">Join now</a>
+                            <a href="#" class="by-btn">Join now</a>
                         </div>
                             
                     </div>
@@ -516,6 +525,27 @@
         </div>
     </section>
     <!-- end copyright section -->
+
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+        <div class="overlay-content">
+          <form action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+
     <script src="./dist/js/app.js"></script>
+    <script>
+        function openSearch(ev) {
+    ev.preventDefault();
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+  }
+    </script>
 </body>
 </html>
