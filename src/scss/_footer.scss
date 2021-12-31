@@ -3,11 +3,11 @@
     background: #29313a;
     // background-image:url(../images/footerbackground.jpg) ;
     background-color:#d3edbd;
-    padding-top:20px;
-    padding-bottom: 30px;
+    padding-top:11px;
+    padding-bottom: 20px;
     .footer-text{
         img{
-            width: 70%;
+            width: 56%;
             display: flex;
             margin: 0 auto;
             padding-bottom: 16px;
@@ -21,7 +21,7 @@
                 color: #4e9100;
                 font-family: $primary-font;
                 font-weight: 500;
-                font-size: 1.2em;
+                font-size: 1em;
                 padding-left: 0;
                 text-align: center;
                @media (min-width: 992px) {
@@ -42,7 +42,7 @@
             @media (min-width: 992px) {
                 text-align: left;
                 padding-left: 18px;
-                font-size: 1.4em;
+                font-size: 1.1em;
             }
         }
         ul{
@@ -54,7 +54,7 @@
                 a{
                     i{
                         color: #4e9100;
-                        font-size: 1.2em;
+                        font-size: 1em;
                         padding-left: 20px; 
                     }
                 }
@@ -71,7 +71,7 @@
             font-family: $primary-font;
             @media(min-width:992px){
                 text-align: left;
-                font-size:1.4em;
+                font-size:1.1em;
             } 
         }
             ul{
@@ -85,7 +85,6 @@
                     font-family: $primary-font;
                     @media(min-width:992px){
                         text-align: left;
-                        font-size: 1.4em;
                     }
                      a{
                         color:#4e9100;
@@ -105,7 +104,7 @@
             text-align: center;
             @media(min-width:992px){
                 text-align: left;
-                font-size: 1.7em;
+                font-size: 1.1em;
             }
         }
         .footer-heading-text{
@@ -116,7 +115,7 @@
             text-align: center;
             @media(min-width:992px){
                 text-align: left;
-                font-size: 1.4em;
+                font-size: 1.2em;
             }
         }
         .line-btn{
@@ -143,8 +142,8 @@
                 text-decoration: none;
                 font-family: $primary-font;
                 font-weight: 700;
-                padding: 8px 18px;
-                font-size: .7em;
+                padding: 4px 13px;
+                font-size: 0.7em;
                 margin: 4px;
             }
         }

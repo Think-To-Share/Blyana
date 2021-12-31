@@ -5,3 +5,4 @@ require('bootstrap')
 // new WOW().init();
 require('./_homepage')
 require('./_common')
+require('./_notificationbar')

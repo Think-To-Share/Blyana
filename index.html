@@ -12,12 +12,11 @@
 <body>
     <header class="header-sec">
         <div class="top-bar">
-            <p class="top-bar-text">Subscribe for 10% off on your first order
-                Free shipping on all orders over $75</p>
+            <p class="top-bar-text"></p>
         </div>
         <div class="bottom-bar">
-            <div class="container-xl">
-                <div class="d-flex">
+            <div>
+                <div class="bottom-bar-logo d-flex">
                     <div class="logo-side">
                         <img
                             src="./src/images/blayana-logo-.png"
@@ -68,8 +67,33 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- </div> -->
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="#" onclick="event.preventDefault()"><i class="fas fa-bars"></i></a>
+            <div class="mobile-logo-side">
+                <img
+                    src="./src/images/blayana-logo-.png"
+                    alt="Site Logo"
+                    class="logo"
+                    />
+                    <!-- <img
+                    src="./src/images/blayana-logo-.png"
+                    alt="Site Logo"
+                    class="logo-white"
+                    /> -->
+            </div>
+            <div class="icon">
+                <ul>
+                    <li>
+                        <a href="#" onclick="openSearch(event)"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -98,6 +122,50 @@
     </section>
     <!-- end Hero Section -->
 
+ <!-- icon section -->
+ <section class="icon-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="brands-heading">Conscious Fashion</h2>
+                <p class="brands-heading-text">Contrary to popular belief, Lorem Ipsum</p>
+            </div>
+        </div>
+    </div>
+        <!-- <div class="icon-wrapper"> -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <img class="logoimg" src="./src/images/ecofriendly.png" alt="" data-text="Contrary to popular belief, Lorem Ipsum">
+                    </div>
+                    <div class="col">
+                        <img class="logoimg" src="./src/images/handcrafted.png" alt="" data-text="ontrary to popular belief, Lorem Ipsum">
+                    </div>
+                    <div class="col">
+                        <img class="logoimg" src="./src/images/women-operated-2.png" alt="" data-text="ntrary to popular belief, Lorem Ipsum">
+                    </div>
+                    <div class="col">
+                        <img class="logoimg" src="./src/images/cruelty-free.png" alt="" data-text="rary to popular belief, Lorem Ipsum">
+                    </div>
+                    <div class="col">
+                        <img class="logoimg" src="./src/images/sustainable.png" alt="" data-text="ary to popular belief, Lorem Ipsum">
+                    </div>
+                    <div class="col">
+                        <img class="logoimg" src="./src/images/fair-wagesfair-pay-1.png" alt="" data-text="y to popular belief, Lorem Ipsum">
+                    </div>
+                    <div class="col">
+                        <img class="logoimg" src="./src/images/recycle-symbol.png" alt="" data-text="to popular belief, Lorem Ipsum">
+                    </div>
+                    <div class="col">
+                        <img class="logoimg" src="./src/images/arrow.png" alt="" data-text="popular belief, Lorem Ipsum">
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+</section>
+<!-- End icon section -->
+
     <!--Best seller section-->
      <section class="seller-sec">
         <div class="container">
@@ -107,7 +175,10 @@
         <div class="row justify-content-center gx-sm-5">
             <div class="col-10 col-sm-6 col-md-3">
                 <div class="seller">
-                   <a href="#"><img src="./src/images/best-sell1.jpg" alt="" class="img-fluid"></a> 
+                   <a href="#">
+                       <img src="./src/images/best-sell1.jpg" alt="" class="normal-image img-fluid">
+                       <img src="./src/images/best-sell2.jpg" alt="" class="hover-image img-fluid">
+                    </a> 
                    <p class="seller-rupee">$ 768</p>
                    <p class="seller-text">Lorem ipsum</p>
                 </div>
