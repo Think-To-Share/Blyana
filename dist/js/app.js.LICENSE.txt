@@ -1,0 +1,48 @@
+/*!
+  * Bootstrap v5.1.3 (https://getbootstrap.com/)
+  * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  */
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+/*! ./_common */
+
+/*! ./_homepage */
+
+/*! ./_notificationbar */
+
+/*! bootstrap */
+
+/*!***********************!*\
+  !*** ./src/js/app.js ***!
+  \***********************/
+
+/*!***************************!*\
+  !*** ./src/js/_common.js ***!
+  \***************************/
+
+/*!******************************************!*\
+  !*** ./src/js/_homepage.js + 43 modules ***!
+  \******************************************/
+
+/*!*************************************************!*\
+  !*** ./src/js/_notificationbar.js + 30 modules ***!
+  \*************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/bootstrap/dist/js/bootstrap.esm.js + 55 modules ***!
+  \**********************************************************************/

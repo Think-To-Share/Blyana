@@ -1,5 +1,3 @@
-import GLightbox from 'glightbox';
-
 window.addEventListener('load', () =>{
     window.addEventListener('scroll',()=>{
         
@@ -14,6 +12,5 @@ window.addEventListener('load', () =>{
             document.querySelector('.header-sec .mobile-menu').classList.remove('scroll')
         }
     })
-    const lightbox = GLightbox({});
 })
 
