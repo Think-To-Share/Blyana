@@ -97,10 +97,12 @@ class IconSection {
     }
 
     setupSlideListener() {
-        this.slides.events.on('indexChanged', (event) => {
-            const images = document.querySelectorAll(`${this.section} .logoimg`);
-            images[event.index].click();
-        })
+        if(this.slides.events) {
+            this.slides.events.on('indexChanged', (event) => {
+                const images = document.querySelectorAll(`${this.section} .logoimg`);
+                images[event.index].click();
+            })
+        }
     }
 }
 
