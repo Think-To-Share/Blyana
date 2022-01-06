@@ -20,26 +20,26 @@
     }
 }
 
-.single-product .content-area{
-    @include make-container();
+// .single-product .content-area{
+//     @include make-container();
 
-    @media (min-width: 576px) {
-        max-width: 540px;
-    }
+//     @media (min-width: 576px) {
+//         max-width: 540px;
+//     }
 
-    @media (min-width: 768px) {
-          max-width: 720px;
-      }
-      @media (min-width: 992px) {
-          max-width: 960px;
-      }
-      @media (min-width: 1200px) {
-          max-width: 1140px;
-      }
-      @media (min-width: 1400px) {
-          max-width: 1320px;
-      }
-}
+//     @media (min-width: 768px) {
+//           max-width: 720px;
+//       }
+//       @media (min-width: 992px) {
+//           max-width: 960px;
+//       }
+//       @media (min-width: 1200px) {
+//           max-width: 1140px;
+//       }
+//       @media (min-width: 1400px) {
+//           max-width: 1320px;
+//       }
+// }
 
 // .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
 //     background-color: #4E9100;
@@ -80,4 +80,18 @@ ul.products{
             }
         }
     }
+}
+
+// .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+//     width: 98%;
+// }
+// @media(max-width: 768px){
+    
+// }
+.woocommerce ul.products li.product .price {
+color: 	#FF0000 !important;
+}
+
+.woocommerce ul.products li.product .price del{
+    color:#000 !important;
 }
