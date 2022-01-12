@@ -56,7 +56,6 @@
                     color: #fefffe;
                     font-size: 35px;
                     text-align: center;
-                    text-shadow: 4px 2px 0px #787f80;
                     font-family: $primary-font;
                         @media (min-width: 768px) {
                             font-size: 3em;
@@ -65,61 +64,26 @@
                     .hero-heading{
                         // font-style: italic;
                         color: #fefffe; 
-                        text-shadow: 4px 2px 0px #787f80;
-                        font-family: $secondary-font;
+                        font-family: 'Josefin Sans', sans-serif;
                         font-weight: 400;
-                        font-size: 5em;
+                        font-size: 4em;
                         text-align: center;
                         text-transform: capitalize;
-                        @media (min-width: 576px){
-                            font-size: 7em;
-                        }
-                        @media (min-width: 768px) {
-                            text-align: center;
-                            font-size: 10em;
-                        }
+
+                            @media (min-width: 768px) {
+                                font-size: 6em;
+                            }
+
+                            @media (min-width: 992px) {
+                                font-size: 8em;
+                            }
                         }
                     }
                     .button-container{
                         text-align: center;
             
                         a{
-                            background-color : #c2eaa3;
-                            color: #4e9100;
-                            border:0.5px solid #c2eaa3;
-                            position:relative;
-                            padding: 14px 38px;
-                            text-decoration: none;
-                            font-family: $primary-font;
-                            font-weight: 600;
-                            font-size: 1.5em;
-                            text-transform: uppercase;
-                            &::before{
-                                content:"";
-                                background-color : #4e9100;
-                                width:100%;
-                                height:100%;
-                                position:absolute;
-                                top:0;
-                                left:0;
-                                transform :scale(0,1);
-                                transition: transform .45s cubic-bezier(.785, .135, .15, .86);
-                                transform-origin :right;
-                            }
-                            &:hover{
-                                &::before{
-                                    transform :scale(1,1);
-                                    transform-origin:left;
-                                    color : #c2eaa3;
-                                }
-                            }
-                            &:hover{
-                                color : #c2eaa3;
-                            }
-                            span{
-                                z-index:2;
-	                            position:relative;
-                            }
+                            @include sliding-btn;
                         }
                     } 
                 }      
@@ -290,8 +254,13 @@
             font-family: $primary-font;
             margin: 0;
             text-align: center;
+            color: #f00;
             @media (min-width: 992px){
                 font-size: 1.7em;
+            }
+
+            del {
+                color: #000;
             }
         }
         .seller-text{
@@ -302,9 +271,6 @@
             margin: 0;
             text-align: center;
             padding-bottom: 10px;
-            @media (min-width: 992px){
-                font-size: 1.4em;
-            }
         }
         .seller-img{
             width: 100%;
