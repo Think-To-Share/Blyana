@@ -12,28 +12,18 @@ window.addEventListener('load', () =>{
             document.querySelector('.header-sec .mobile-menu').classList.remove('scroll')
         }
     })
-
-    // Create mutation observer to detect attribute changes
-    // const mutObserver = new MutationObserver(mutations => {
-    //     mutations.forEach(mutation => {
-    //         if (mutation.type === 'attributes') {
-    //             const elem = mutation.target;
-    //             elem.classList.add('animate__animated' , 'animate__fadeIn');
-
-    //             elem.addEventListener('animationend', (event) => {
-    //                 event.stopPropagation()
-    //                 event.target.classList.remove('animate__animated', 'animate__fadeIn');
-    //             }, {once: true});
-    //         }
-    //     });
-    // });
-
-    // if(document.querySelector('.woocommerce div.product div.images img')) {
-    //     mutObserver.observe(document.querySelector('.woocommerce div.product div.images img'), {
-    //         attributes: true,
-    //     })
-    // }
     
+    // woocommerce product title same height
+    let productTitle = document.querySelectorAll('.woocommerce-loop-product__title');
+    let productTitleHeight = 0;
+    productTitle.forEach(element => {
+        if(element.clientHeight > productTitleHeight){
+            productTitleHeight = element.clientHeight;
+        }
+    });
+    productTitle.forEach(element => {
+        element.style.height = productTitleHeight + 'px';
+    });
     
 })
 
