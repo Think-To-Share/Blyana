@@ -108,7 +108,7 @@ ul.products{
 }
 
 .woocommerce ul.products li.product .add_to_cart_button {
-    @include sliding-btn(#fff, #000);
+    @include sliding-btn(#000 , #fff);
     font-size: 1rem;
     padding: 12px 20px;
 }
